@@ -1,0 +1,18 @@
+1、飞机的上下左右移动
+
+键盘事件（onkeydown） wasd 上下左右
+
+获取键盘值alert（event.keyCode）
+
+上：w/上   飞机距离屏幕顶部的位置
+	    relactive改变top位置
+	    飞机不能超出屏幕顶部，top值不能小于0
+	    Math.max(a,b)获取来a，b值之间的最大值
+
+2、对面的敌机产生
+
+敌机循环随机出现：Math.ceil就近取整
+
+3、背景地图的移动
+   if判断地图位置
+   通过setInterval函数设置地图循环
